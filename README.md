@@ -1,6 +1,10 @@
 # cisco_ios_2_eve-ng
 Convert Cisco IOS config to compatible config for running in EVE-NG network emulation
 
+This script will remove or comment_out config lines that are not supported (or wanted) in EVE-NG config so you can quickly create or update your lab environment with production config
+
+
+
 Requirements
 ============
 Python + Git
