@@ -11,8 +11,12 @@
 import os, glob
 
 
-delete_lines = ['enable ', ' password ' ,'boot-', 'boot system', 'banner', '*'] 
-comment_lines = ['aaa a', 'vtp mode', 'mls ',' action-type', ' group ', 'spanning-tree ', 'diagnostic ', 'power enable', 'redundancy', ' main-cpu', 'auto-sync running-config', 'mode sso', 'vlan ', 'errdisable ', '-queue','message-digest', 'tacacs-server ', 'nsf']
+delete_lines = ['enable ', ' password ' ,'boot-', 'boot system', 'media-type rj45', 'banner', '*', 'ETX'] 
+comment_lines = ['aaa a', 'vtp mode', 'mls ',' action-type', ' group ',  /
+    'spanning-tree ', 'diagnostic ', 'power enable', 'redundancy', ' main-cpu', /
+    'auto-sync running-config', 'mode sso', 'vlan ', 'errdisable ', '-queue', /
+    'message-digest', 'tacacs-server ', 'nsf', 'snmp ifmib']
+
 change_ints = {
     "TenGigabitEthernet1/1":"GigabitEthernet0/0", 
     "TenGigabitEthernet1/2":"GigabitEthernet0/1",
